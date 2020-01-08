@@ -1,0 +1,75 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="GitHub Pages 对自定义域名支持 HTTPS"><meta name="keywords" content="GitHub"><meta name="author" content="Rin Yx"><meta name="copyright" content="Rin Yx"><title>GitHub Pages 对自定义域名支持 HTTPS | chitogeYXのBlog</title><link rel="shortcut icon" href="/melody-favicon.ico"><link rel="stylesheet" href="/css/index.css?version=1.6.1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css?version=1.6.1"><link rel="dns-prefetch" href="https://cdn.staticfile.org"><link rel="dns-prefetch" href="https://cdn.bootcss.com"><link rel="dns-prefetch" href="https://creativecommons.org"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.1.1/dist/instantsearch.min.css"><script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.1.1/dist/instantsearch.min.js" defer></script><link rel="dns-prefetch" href="https://hm.baidu.com"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?38161d44657beb798c24ac157e8e402e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();</script><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: {"appId":"DRTL0MIGYT","apiKey":"ac18fc6ffeace98702579748856b2402","indexName":"rin","hits":{"per_page":10},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容:${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  }
+} </script><meta name="generator" content="Hexo 4.2.0"></head><body><canvas class="fireworks"></canvas><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar"><div class="toggle-sidebar-info text-center"><span data-toggle="切换文章详情">切换站点概览</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#操作流程"><span class="toc-number">1.</span> <span class="toc-text">操作流程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#域名解析"><span class="toc-number">1.1.</span> <span class="toc-text">域名解析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Github-Pages-项目配置"><span class="toc-number">1.2.</span> <span class="toc-text">Github Pages 项目配置</span></a></li></ol></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="https://rin-1253361658.file.myqcloud.com/photo.jpg"></div><div class="author-info__name text-center">Rin Yx</div><div class="author-info__description text-center">孤鸟</div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">文章</span><span class="pull-right">5</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">标签</span><span class="pull-right">5</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">分类</span><span class="pull-right">3</span></a></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://rin-1253361658.file.myqcloud.com/top.png)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">chitogeYXのBlog</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus"><a class="site-page social-icon search"><i class="fa fa-search"></i><span> 搜索</span></a><a class="site-page" href="/">主页</a><a class="site-page" href="/archives">归档</a><a class="site-page" href="/tags">标签</a><a class="site-page" href="/categories">分类</a></span></div><div id="post-info"><div id="post-title">GitHub Pages 对自定义域名支持 HTTPS</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-05-04</time><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/GitHub/">GitHub</a><div class="post-meta-wordcount"><span>字数总计: </span><span class="word-count">833</span><span class="post-meta__separator">|</span><span>阅读时长: 2 分钟</span></div></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><p><img src="https://rin-1253361658.file.myqcloud.com/github.png" alt=""></p>
+<a id="more"></a>
+<p>GitHub Pages Blog 原文：<a href="https://blog.github.com/2018-05-01-github-pages-custom-domains-https/" target="_blank" rel="noopener">Custom domains on GitHub Pages gain support for HTTPS</a></p>
+<p>在 2018-05-01，GitHub Pages 官方发布了上面的一篇 Blog，告知我们 GitHub Pages 对自定义域名支持 了 HTTPS ，下面针对此新特性来做个简单的说明并提供详细的开启操作流程。</p>
+<h2 id="操作流程"><a href="#操作流程" class="headerlink" title="操作流程"></a>操作流程</h2><p>关于如何在 Github Pages 上搭建一个博客，这里不再赘述，网上的教程比较多，此次仅对开启自定义域名支持 HTTPS 这一特性来进行说明。</p>
+<p>本文以项目 <code>https://github.com/ChitogeYX/ChitogeYX.github.io</code> 和域名 <code>yxrin.com</code> 为例。</p>
+<p>操作流程：</p>
+<ol>
+<li>域名解析</li>
+<li>GitHub Pages 项目设置<ol>
+<li>添加 CNAME 文件</li>
+<li>配置自定义域名</li>
+</ol>
+</li>
+</ol>
+<h3 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h3><p>开启 Github Pages 之后，会有一个默认的二级域名作为访问地址，一般是和项目同名，比如我的这个项目的默认二级域名访问地址是 <code>http://chitogeyx.github.io</code> 。知道这个之后，我们对域名进行解析操作：</p>
+<p>我们添加一条 CNAME 解析：</p>
+<table>
+<thead>
+<tr>
+<th>主机记录（Host）</th>
+<th align="left">记录类型（Type）</th>
+<th align="center">记录值（Values）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>@</td>
+<td align="left">CNAME</td>
+<td align="center"><code>chitogeyx.github.io</code></td>
+</tr>
+<tr>
+<td>www</td>
+<td align="left">CNAME</td>
+<td align="center"><code>chitogeyx.github.io</code></td>
+</tr>
+</tbody></table>
+<p>上面提供了2个例子，第一个是你想使用 <code>yxrin.com</code> 来访问你的博客，第二个就是 <code>xxx.yxrin.com</code> 来访问，这里要和 GitHub Pages 项目设置 里的 CNAME 文件的内容要对应，后面会说。</p>
+<p>解析生效后，可以尝试访问来查看是否解析成功，直接访问 <code>http://yxrin.com</code> ，如果是 Github Pages 的 404 界面，说明解析成功了。</p>
+<h3 id="Github-Pages-项目配置"><a href="#Github-Pages-项目配置" class="headerlink" title="Github Pages 项目配置"></a>Github Pages 项目配置</h3><p>大家可以参考 我的项目 ，它的根目录里有个 <code>CNAME</code> 文件，文件的内容是和上面的域名解析对应的。</p>
+<p>即如果使用 <code>@</code> 值 <code>CNAME</code> 到 <code>chitogeyx.github.io</code>，则文件的内容为 <code>yxrin.com</code> ;</p>
+<p>如果使用 <code>xxx</code> 任意值 <code>CNAME</code> 到 <code>chitogeyx.github.io</code>，则文件的内容应为 <code>xxx.yxrin.com</code> 。</p>
+<p>添加完成后，项目根目录有了此文件，下面去项目的 settings 看一下。</p>
+<p>在 GitHub Pages 选项卡下能看到：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Your site is published at http:&#x2F;&#x2F;yxrin.com&#x2F;</span><br><span class="line">Custom domain</span><br><span class="line">Custom domains allow you to serve your site from a domain other than chitogeyx.github.io. Learn more.</span><br><span class="line">yxrin.com</span><br></pre></td></tr></table></figure>
+<p>正常情况下是这样了，你勾选 <code>enforce HTTPS</code> 开启强制跳转到 HTTPS 即可，相应的Github Pages 的内容会变成：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Your site is published at https:&#x2F;&#x2F;yxrin.com&#x2F;</span><br></pre></td></tr></table></figure>
+<p>那么如果如果之前已经开启了自定义域名，<code>enforce HTTPS</code> 无法勾选且怎么办？</p>
+<p>按照官方提示，进行如下操作：</p>
+<ol>
+<li>把 Custom domain 中的值清空，并点击 <code>Save</code> 进行保存；</li>
+<li>在 Custom domain 中的填入之前清空的值，我这里是 <code>yxrin.com</code> ，填入后点击保存；</li>
+<li>尝试在浏览器里主动访问 <a href="https://yxrin.com">https://yxrin.com</a> ，地址要根据自己的情况，注意协议类型是 https，正确情况下是能正常访问的；</li>
+<li>刷新项目设置页，如果 enforce HTTPS 可勾选，勾选即可；</li>
+<li>如果 <code>enforce HTTPS</code> 不可勾选，并且提示 <code>Not yet available for your site because the certificate has not finished being issued”</code> ，说明证书尚未申请完成，等待一天即可。</li>
+</ol>
+<p>注意，如果使用 Chrome 访问 <a href="https://yxrin.com">https://yxrin.com</a> 地址栏左侧仍未出现小绿锁，请检查自己的网站引用的资源文件有没有使用了 http 协议，请替换成相应的 https 资源。</p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Rin Yx</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://yxrin.com/2018/05/04/GitHub-Pages-%E5%AF%B9%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E6%94%AF%E6%8C%81-HTTPS/">https://yxrin.com/2018/05/04/GitHub-Pages-%E5%AF%B9%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E6%94%AF%E6%8C%81-HTTPS/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://yxrin.com">chitogeYXのBlog</a>！</span></div></div><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/GitHub/">GitHub</a></div><nav id="pagination"><div class="prev-post pull-left"><a href="/2018/05/07/PHPExcel%E5%AF%BC%E5%87%BA2003%E5%92%8C2007%E7%9A%84excel%E6%96%87%E6%A1%A3%E5%8A%9F%E8%83%BD%E7%A4%BA%E4%BE%8B/"><i class="fa fa-chevron-left">  </i><span>PHPExcel导出2003和2007的excel文档功能示例</span></a></div><div class="next-post pull-right"><a href="/2018/04/19/Hexo%20-d%E6%8A%A5%E9%94%99/"><span>Hexo -d报错</span><i class="fa fa-chevron-right"></i></a></div></nav></div></div><footer><div class="layout" id="footer"><div class="copyright">&copy;2018 - 2020 By Rin Yx</div><div class="framework-info"><span>驱动 - </span><a href="http://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 - </span><a href="https://github.com/Molunerfinn/hexo-theme-melody" target="_blank" rel="noopener"><span>Melody</span></a></div><div class="icp"><a href="http://beian.miit.gov.cn" target="_blank" rel="noopener"><span>京ICP备17006531号-2</span></a></div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file-o"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.6.1"></script><script src="/js/fancybox.js?version=1.6.1"></script><script src="/js/sidebar.js?version=1.6.1"></script><script src="/js/copy.js?version=1.6.1"></script><script src="/js/fireworks.js?version=1.6.1"></script><script src="/js/transition.js?version=1.6.1"></script><script src="/js/scroll.js?version=1.6.1"></script><script src="/js/head.js?version=1.6.1"></script><script src="/js/search/algolia.js"></script><script>if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+  $('#nav').addClass('is-mobile')
+  $('footer').addClass('is-mobile')
+}</script><div class="search-dialog" id="algolia-search"><div class="search-dialog__title" id="algolia-search-title">Algolia</div><div id="algolia-input-panel"><div id="algolia-search-input"></div></div><hr><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-stats"></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div></body></html>
